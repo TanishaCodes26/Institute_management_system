@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+main {
+    background-color: #f4f4ff;
+}
+
+.faculty-page {
+    max-width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page-heading {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 20px 0;
+    color: black;
+    text-align: center;
+}
+
+.faculty-table {
+    width: 100%;
+    /* border-collapse: collapse; */
+}
+
+.faculty-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px gray;
+    border-radius: 10px;
+}
+
+.faculty-row.odd {
+    background-color: #b8d1eb;
+    flex-direction: row;
+}
+
+.faculty-row.even {
+    background-color: #72acea;
+    flex-direction: row-reverse;
+}
+
+/* Faculty Image and Details */
+.faculty-img {
+    text-align: center;
+}
+
+.faculty-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.faculty-name-email {
+    font-size: 1em;
+    color: black;
+}
+
+/* Column Titles */
+.faculty-details {
+    color: black;
+    width: 25%;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.faculty-details-heading {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.faculty-details-list {
+    color: black;
+    font-size: 1em;
+    list-style: square;
+}
+
+.faculty-details-list li {
+    margin-bottom: 5px;
+}
+
+.faculty-details p {
+    text-align: justify;
+}
+
+
+
+@media (max-width:831px) and (min-width:651px) {
+    .faculty-row{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .faculty-details{
+        width: 45%;
+    }
+}
+
+@media (max-width:650px) and (min-width:481px) {
+    .faculty-row{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .faculty-details{
+        width: 70%;
+    }
+}
+
+@media (max-width:480px) and (min-width:340px) {
+    .faculty-row{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .faculty-details{
+        width: 70%;
+    }
+}

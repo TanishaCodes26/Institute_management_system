@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.admission-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url('https://cdn.pixabay.com/photo/2022/08/30/20/47/institute-7421918_1280.jpg');
+    /* Add your selected image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 20px 10px;
+}
+
+.admission-box {
+    background: rgba(0, 0, 0, .5);
+    padding: 30px;
+    max-width: 50%;
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 6.1);
+    color: white;
+}
+
+.admission-box h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.admission-box p {
+    margin-bottom: 1.2em;
+    line-height: 1.5;
+}
+.admission-box a{
+    text-decoration: none;
+}
+.apply-btn {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.apply-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+.second-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+/* Left Part */
+.capsule-container {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.capsule {
+    background-color: #b8d1eb;
+    width: 48%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.capsule h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.capsule ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.capsule ul li {
+    line-height: 1.5;
+}
+
+/* Right Part */
+.important-dates {
+    flex-basis: 28%;
+    background-color: #b8d1eb;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.important-dates h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.important-dates ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.important-dates ul li {
+    background-color: #72acea;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+
+
+#faq-and-fees {
+    padding: 40px;
+}
+
+.faq-and-fees-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.faq-section {
+    width: 70%;
+    padding: 20px;
+    /* Adjust spacing as needed */
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    /* Spacing between FAQ items */
+}
+
+.faq-item h3 {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.fees-section {
+    width: 30%;
+    max-height: fit-content;
+    padding-left: 20px;
+    background-color: #b8d1eb;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.fees-section h2 {
+    margin-bottom: 15px;
+}
+
+.fees-section ul {
+    list-style-type: none;
+    /* Remove bullet points */
+    padding: 0;
+    /* Remove padding */
+}
+
+.fees-section li {
+    margin-bottom: 10px;
+    /* Spacing between list items */
+}
+
+
+@media (max-width:831px) and (min-width:651px) {
+    .second-section {
+        flex-direction: column;
+    }
+
+    .capsule-container {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:650px) and (min-width:481px) {
+    .admission-box {
+        max-width: 100%;
+    }
+
+    .admission-box h1 {
+        font-size: 2.2em;
+    }
+
+    .second-section {
+        flex-direction: column;
+    }
+
+    .capsule-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .capsule {
+        width: 100%;
+    }
+    .faq-and-fees-container{
+        flex-direction: column;
+    }
+    .faq-section,.fees-section{
+        width: 100%;
+    }
+}
+
+@media (max-width:480px) and (min-width:340px) {
+    .admission-box {
+        max-width: 100%;
+    }
+
+    .admission-box h1 {
+        font-size: 2.2em;
+    }
+
+    .second-section {
+        flex-direction: column;
+    }
+
+    .capsule-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .capsule {
+        width: 100%;
+    }
+    #faq-and-fees{
+        padding: 10px;
+    }
+    #faq-and-fees h2{
+        font-size: 1.35em;
+        font-weight: bolder;
+    }
+    .faq-and-fees-container{
+        flex-direction: column;
+    }
+    .faq-section,.fees-section{
+        width: 100%;
+    }
+    
+}
